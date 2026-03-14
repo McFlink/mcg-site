@@ -289,11 +289,32 @@ h3 {
 .process-card,
 .contact-card,
 .about-card {
-  background: var(--card);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 22px;
   box-shadow: var(--shadow);
+  color: var(--text);
+}
+
+.service-card h3,
+.service-card h4,
+.project-card h3,
+.project-card h4,
+.process-card h3,
+.contact-card h3,
+.contact-card h4,
+.about-card h3,
+.about-card h4 {
+  color: var(--text);
+}
+
+.service-card p,
+.project-card p,
+.process-card p,
+.contact-card p,
+.about-card p {
+  color: var(--muted);
 }
 
 .service-card {
@@ -305,8 +326,8 @@ h3 {
   width: 56px;
   height: 56px;
   border-radius: 16px;
-  background: rgba(15, 106, 216, 0.1);
-  color: var(--accent);
+  background: color-mix(in srgb, var(--primary) 16%, var(--surface));
+  color: var(--primary);
   display: grid;
   place-items: center;
   font-weight: 700;
@@ -327,11 +348,11 @@ h3 {
 .pill {
   padding: 8px 12px;
   border-radius: 999px;
-  background: #f0f4fa;
-  color: #0a1625;
+  background: color-mix(in srgb, var(--primary) 10%, var(--surface));
+  color: var(--text);
   font-weight: 600;
   font-size: 13px;
-  border: 1px solid #e0e7f1;
+  border: 1px solid color-mix(in srgb, var(--primary) 14%, var(--border));
 }
 
 .project-card {
@@ -402,7 +423,7 @@ h3 {
   width: 8px;
   height: 8px;
   border-radius: 2px;
-  background: var(--accent);
+  background: var(--primary);
 }
 
 .split-card {
@@ -498,7 +519,7 @@ h3 {
 .contact-list strong {
   display: block;
   font-size: 18px;
-  color: #0a1625;
+  color: var(--text);
 }
 
 .pill-rows {
@@ -515,7 +536,7 @@ h3 {
 .contact-form label {
   display: grid;
   gap: 6px;
-  color: #0a1625;
+  color: var(--text);
   font-weight: 600;
 }
 
@@ -524,12 +545,12 @@ h3 {
   border-radius: 12px;
   border: 1px solid var(--border);
   padding: 12px;
-  background: #fdfefe;
+  background: var(--surface);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid rgba(15, 106, 216, 0.4);
+  outline: 2px solid rgba(37, 99, 235, 0.4);
   border-color: transparent;
 }
 

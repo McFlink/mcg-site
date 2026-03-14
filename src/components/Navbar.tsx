@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/images/MCG-black-bg.png'
 import './Navbar.css'
+import ThemeToggle from "./ThemeToggle"
 
 const navItems = [
   { path: '/', label: 'Hem', end: true },
@@ -55,6 +56,7 @@ function Navbar() {
         <Link to="/contact" className="nav-cta" onClick={closeMenu}>
           Boka möte
         </Link>
+        <ThemeToggle />
       </div>
     </header>
   )

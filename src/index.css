@@ -11,6 +11,20 @@
   --border: #e5e7eb;
   --shadow: 0 24px 70px rgba(15, 57, 97, 0.08);
   --radius: 16px;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --primary: #2563eb;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --border: #334155;
+  --primary: #3b82f6;
 }
 
 * {
@@ -25,6 +39,9 @@ body {
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
 }
 
 h1,
@@ -70,6 +87,53 @@ textarea {
 
 .section {
   padding: 96px 0;
+}
+
+.project-card,
+.service-card,
+.contact-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.theme-toggle {
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.project-card p,
+.service-card p,
+.contact-card p {
+  color: var(--muted);
+}
+
+.project-card h1,
+.project-card h2,
+.project-card h3,
+.project-card h4,
+.service-card h1,
+.service-card h2,
+.service-card h3,
+.contact-card h1,
+.contact-card h2,
+.contact-card h3,
+.contact-card h4 {
+  color: var(--text);
+}
+
+.project-card span,
+.service-card span,
+.contact-card span {
+  color: var(--muted);
+}
+
+.section h2,
+.section h3 {
+  color: var(--text);
 }
 
 @media (max-width: 900px) {
