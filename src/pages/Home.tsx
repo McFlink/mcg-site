@@ -81,7 +81,7 @@ function Home() {
           <p className="muted">
             Vi är ett svenskt entreprenadbolag som gillar raka besked och tydliga
             tidplaner. Vår projektledning håller ihop teknik, myndighetskrav och
-            logistik – och ser till att marken lämnas snyggare än när vi kom.
+            logistik, och ser till att marken lämnas snyggare än när vi kom.
           </p>
           <ul className="check-list">
             <li>Certifierade maskinförare och fibertekniker</li>
