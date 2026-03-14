@@ -12,7 +12,7 @@ export const projects: Project[] = [
   {
     id: 'uppsala',
     title: 'Fiberutbyggnad i villaområde',
-    location: 'Uppsala',
+    location: 'Karlskoga',
     year: '2025',
     image:
       'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80',
@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     id: 'stockholm',
     title: 'Kanalisation i innerstadsmiljö',
-    location: 'Stockholm',
+    location: 'Forshaga',
     year: '2024',
     image:
       'https://images.unsplash.com/photo-1503389152951-9f343605f61e?auto=format&fit=crop&w=1600&q=80',
@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     id: 'vasteras',
     title: 'Industriområde – robust anslutning',
-    location: 'Västerås',
+    location: 'Karlstad',
     year: '2024',
     image:
       'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80',
@@ -45,7 +45,7 @@ export const projects: Project[] = [
   {
     id: 'orebro',
     title: 'Landsbygdsring och redundans',
-    location: 'Örebro län',
+    location: 'Kristinehamn',
     year: '2023',
     image:
       'https://images.unsplash.com/photo-1504992963429-56f5d58b1a48?auto=format&fit=crop&w=1600&q=80',

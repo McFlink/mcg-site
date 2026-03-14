@@ -1,0 +1,32 @@
+.contact-people-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.contact-person {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-person h4 {
+  margin: 0.25rem 0 0;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.contact-list li:last-child {
+  margin-bottom: 0;
+}

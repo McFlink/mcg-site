@@ -18,7 +18,7 @@ function Home() {
         ctaTo="/contact"
         secondaryLabel="Se våra projekt"
         secondaryTo="/projects"
-        backgroundImage="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=2000&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1575281923032-f40d94ef6160?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=2000&q=80"
       />
 
       <section className="section">
@@ -109,7 +109,7 @@ function Home() {
         <div className="cta-inner">
           <div>
             <p className="eyebrow">Redo att starta?</p>
-            <h2>Berätta om ditt nästa projekt</h2>
+            <h2>Kontakta MCG om ditt nästa projekt</h2>
             <p className="muted">
               Vi återkopplar snabbt med förslag på upplägg, tidplan och resurser.
             </p>

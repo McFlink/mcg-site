@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import logo from '../assets/images/MCG-black-bg.png'
+import './Navbar.css'
 
 const navItems = [
   { path: '/', label: 'Hem', end: true },
@@ -19,7 +21,7 @@ function Navbar() {
     <header className="navbar">
       <div className="container nav-inner">
         <Link to="/" className="brand" onClick={closeMenu}>
-          <span className="brand-mark">MCG</span>
+          <img src={logo} alt="MCG logotyp" className="brand-logo" />
           <span className="brand-text">Mark & Fiber</span>
         </Link>
 

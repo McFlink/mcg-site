@@ -1,4 +1,5 @@
 import type { FormEvent } from 'react'
+import './Contact.css'
 
 function Contact() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -19,26 +20,51 @@ function Contact() {
       </div>
 
       <div className="contact-grid">
+
+
         <div className="contact-card info">
-          <h3>Ring eller mejla</h3>
-          <ul className="contact-list">
-            <li>
-              <span>Telefon</span>
-              <strong>010-123 45 67</strong>
-            </li>
-            <li>
-              <span>E-post</span>
-              <strong>info@mcg.se</strong>
-            </li>
-            <li>
-              <span>Adress</span>
-              <strong>Industrigatan 12, 123 45 Stockholm</strong>
-            </li>
-          </ul>
-          <div className="pill-rows">
-            <span className="pill">Jour 24/7</span>
-            <span className="pill">Arbetar i hela Sverige</span>
-            <span className="pill">Entreprenad & service</span>
+          <h3>Kontaktpersoner</h3>
+          <div className="contact-people-grid">
+            <div className="contact-person">
+              <div>
+                <p className="eyebrow">Arbetsledare</p>
+                <h4>Johan Flink</h4>
+              </div>
+              <ul className="contact-list">
+                <li>
+                  <span>Tel</span>
+                  <strong>
+                    <a href="tel:0707993551">070-799 35 51</a>
+                  </strong>
+                </li>
+                <li>
+                  <span>E-post</span>
+                  <strong>
+                    <a href="mailto:mcg-jf@mcg-master.com">mcg-jf@mcg-master.com</a>
+                  </strong>
+                </li>
+              </ul>
+            </div>
+            <div className="contact-person">
+              <div>
+                <p className="eyebrow">Arbetsledare</p>
+                <h4>Johan Kressner</h4>
+              </div>
+              <ul className="contact-list">
+                <li>
+                  <span>Tel</span>
+                  <strong>
+                    <a href="tel:0708105159">070-810 51 59</a>
+                  </strong>
+                </li>
+                <li>
+                  <span>E-post</span>
+                  <strong>
+                    <a href="mailto:mcg-jk@mcg-master.com">mcg-jk@mcg-master.com</a>
+                  </strong>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

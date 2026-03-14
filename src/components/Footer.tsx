@@ -18,7 +18,7 @@ function Footer() {
           <ul>
             <li>Telefon: 010-123 45 67</li>
             <li>E-post: info@mcg.se</li>
-            <li>Adress: Industrigatan 12, 123 45 Stockholm</li>
+            <li>Adress: Bergsgårdsvägen 6, 667 34 Forshaga</li>
           </ul>
         </div>
         <div className="footer-block">
@@ -38,14 +38,14 @@ function Footer() {
         <div className="footer-block">
           <h4>Öppettider</h4>
           <ul>
-            <li>Vardagar 07.00–17.00</li>
+            <li>Vardagar 07.00–16.00</li>
             <li>Jour vid driftstopp</li>
           </ul>
         </div>
       </div>
       <div className="footer-bottom container">
-        <span>© {year} MCG Entreprenad AB</span>
-        <span>Org.nr 5599XX-XXXX</span>
+        <span>© {year} MCG Master Construct Group AB</span>
+        <span>Org.nr 559325-0037</span>
       </div>
     </footer>
   )
