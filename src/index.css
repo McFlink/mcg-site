@@ -86,7 +86,7 @@ textarea {
 }
 
 .section {
-  padding: 96px 0;
+  padding: 96px clamp(16px, 5vw, 40px);
 }
 
 .project-card,
@@ -138,6 +138,6 @@ textarea {
 
 @media (max-width: 900px) {
   .section {
-    padding: 64px 0;
+    padding: 64px clamp(14px, 5vw, 28px);
   }
 }
