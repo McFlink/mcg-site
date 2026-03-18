@@ -4,6 +4,7 @@ import ProjectCard from '../components/ProjectCard'
 import ServiceCard from '../components/ServiceCard'
 import { projects } from '../data/projects'
 import { services } from '../data/services'
+import mcgLetter from '../assets/images/MCG-letter.png'
 
 function Home() {
   const featuredServices = services.slice(0, 4)
