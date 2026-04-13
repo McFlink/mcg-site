@@ -8,7 +8,7 @@ import { projects } from '../data/projects'
 import { services } from '../data/services'
 
 const splashStorageKey = 'homeSplashSeen'
-const splashHoldMs = 1000
+const splashHoldMs = 2000
 const splashExitMs = 700
 
 function Home() {
