@@ -8,7 +8,7 @@ import { projects } from '../data/projects'
 import { services } from '../data/services'
 
 const splashStorageKey = 'homeSplashSeen'
-const splashHoldMs = 1800
+const splashHoldMs = 1200
 const splashExitMs = 700
 
 function Home() {
@@ -19,12 +19,37 @@ function Home() {
 
     return window.sessionStorage.getItem(splashStorageKey) !== 'true'
   })
+
+  const [hasSplashStarted, setHasSplashStarted] = useState(false)
   const [isSplashExiting, setIsSplashExiting] = useState(false)
+
   const featuredServices = services.slice(0, 4)
   const featuredProjects = projects.slice(0, 3)
 
   useEffect(() => {
-    if (!isSplashVisible) {
+    if (!isSplashVisible || hasSplashStarted) {
+      return
+    }
+
+    const startSplash = () => {
+      if (document.visibilityState === 'visible') {
+        setHasSplashStarted(true)
+      }
+    }
+
+    startSplash()
+
+    if (!hasSplashStarted) {
+      document.addEventListener('visibilitychange', startSplash)
+    }
+
+    return () => {
+      document.removeEventListener('visibilitychange', startSplash)
+    }
+  }, [isSplashVisible, hasSplashStarted])
+
+  useEffect(() => {
+    if (!isSplashVisible || !hasSplashStarted) {
       return
     }
 
@@ -37,10 +62,10 @@ function Home() {
     return () => {
       window.clearTimeout(exitTimer)
     }
-  }, [isSplashVisible])
+  }, [isSplashVisible, hasSplashStarted])
 
   useEffect(() => {
-    if (!isSplashVisible || !isSplashExiting) {
+    if (!isSplashVisible || !hasSplashStarted || !isSplashExiting) {
       return
     }
 
@@ -52,7 +77,7 @@ function Home() {
     return () => {
       window.clearTimeout(hideTimer)
     }
-  }, [isSplashVisible, isSplashExiting])
+  }, [isSplashVisible, hasSplashStarted, isSplashExiting])
 
   return (
     <>
