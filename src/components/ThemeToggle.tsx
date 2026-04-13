@@ -8,11 +8,7 @@ function ThemeToggle() {
 
     if (saved) return saved
 
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark"
-    }
-
-    return "light"
+    return "dark"
   })
 
   useEffect(() => {

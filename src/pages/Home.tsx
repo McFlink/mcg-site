@@ -18,7 +18,7 @@ function Home() {
         ctaTo="/contact"
         secondaryLabel="Se våra projekt"
         secondaryTo="/projects"
-        backgroundImage="https://images.unsplash.com/photo-1575281923032-f40d94ef6160?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=2000&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1580901369227-308f6f40bdeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=2000&q=80"
       />
 
       <section className="section">
@@ -52,7 +52,7 @@ function Home() {
             <p className="eyebrow">Projekt</p>
             <h2>Projekt som tål granskning</h2>
             <p className="muted">
-              Referenser från innerstad, landsbygd och industri. Alltid med spårbar egenkontroll.
+              Referenser från innerstad, landsbygd och industri.
             </p>
           </div>
           <Link to="/projects" className="link-arrow">
@@ -95,8 +95,8 @@ function Home() {
             <div className="stat-label">års samlad erfarenhet</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">24/7</div>
-            <div className="stat-label">Jour vid driftstopp</div>
+            <div className="stat-value">Kvalitet</div>
+            <div className="stat-label">genom hela arbetet</div>
           </div>
           <div className="stat-card">
             <div className="stat-value">1 partner</div>

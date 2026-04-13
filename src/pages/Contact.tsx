@@ -1,10 +1,10 @@
-import type { FormEvent } from 'react'
+// import type { FormEvent } from 'react'
 import './Contact.css'
 
 function Contact() {
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-  }
+  // const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  //   event.preventDefault()
+  // }
 
   return (
     <section className="section">
@@ -14,7 +14,7 @@ function Contact() {
           <h2>Berätta om ditt behov</h2>
           <p className="muted">
             Vi återkopplar snabbt med förslag på upplägg, tidplan och bemanning. Ring oss vid akuta
-            driftstopp – jouren är alltid igång.
+            driftstopp.
           </p>
         </div>
       </div>
@@ -47,7 +47,7 @@ function Contact() {
             </div>
             <div className="contact-person">
               <div>
-                <p className="eyebrow">Arbetsledare</p>
+                <p className="eyebrow">VD</p>
                 <h4>Johan Kressner</h4>
               </div>
               <ul className="contact-list">
@@ -68,7 +68,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className="contact-card form">
+        {/* <div className="contact-card form">
           <h3>Skicka en förfrågan</h3>
           <form className="contact-form" onSubmit={handleSubmit}>
             <label>
@@ -100,7 +100,7 @@ function Contact() {
               Skicka förfrågan
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </section>
   )

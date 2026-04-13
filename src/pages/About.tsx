@@ -16,37 +16,37 @@ function About() {
         <div className="about-card">
           <h3>Lagbygge</h3>
           <p>
-            Vi arbetar i fasta lag som känner varandra och maskinparken väl. Det ger tempo på plats
-            och minskar riskerna.
+            Vi jobbar i små, sammansvetsade lag som vet hur vi vill ha det på arbetsplatsen.
+            Det gör att jobbet flyter på och blir rätt gjort från början.
           </p>
           <ul className="check-list">
-            <li>Arbetsledare på plats</li>
-            <li>Gemensam planering med beställare</li>
-            <li>Enkelt att nå oss under hela projektet</li>
+            <li>Samma kontaktperson genom hela jobbet</li>
+            <li>Snabba beslut ute på plats</li>
+            <li>Enkelt att få tag på oss</li>
           </ul>
         </div>
         <div className="about-card">
-          <h3>Kvalitet</h3>
-          <p>
-            Egenkontroller, mätprotokoll och fotodokumentation. Vi levererar underlag som går direkt
-            in i era system.
+          <h3>Utförande</h3>
+         <p>
+            Vi gör jobbet ordentligt och lämnar efter oss snyggt. Oavsett om det är fiber,
+            schakt eller markarbete så ska det funka – och se bra ut.
           </p>
           <ul className="check-list">
-            <li>TA-planer och riskanalyser</li>
-            <li>OTDR och tryckprovning</li>
-            <li>Slutdokumentation redo vid överlämning</li>
+            <li>Rent och snyggt efter avslutat arbete</li>
+            <li>Vi håller det vi lovar</li>
+            <li>Erfarenhet från både små och stora jobb</li>
           </ul>
         </div>
         <div className="about-card">
-          <h3>Hållbarhet & säkerhet</h3>
+          <h3>Flexibilitet</h3>
           <p>
-            Säkra arbetsplatser och smart logistik. Vi prioriterar återvinning av massor och maskiner
-            med låg bränsleförbrukning.
+            Alla jobb ser olika ut. Vi anpassar oss efter förutsättningarna och löser det
+            som dyker upp längs vägen.
           </p>
           <ul className="check-list">
-            <li>Dagliga skyddsronder</li>
-            <li>Plan för återställning och miljö</li>
-            <li>Uppföljning efter avslutat arbete</li>
+            <li>Snabba ryck när det behövs</li>
+            <li>Fungerar både för privatpersoner och företag</li>
+            <li>Kan hoppa in i pågående projekt</li>
           </ul>
         </div>
       </div>

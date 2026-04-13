@@ -19,7 +19,7 @@
 }
 
 [data-theme="dark"] {
-  --bg: #0f172a;
+  --bg: #000000;
   --surface: #1e293b;
   --text: #f8fafc;
   --muted: #94a3b8;

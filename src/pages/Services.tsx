@@ -37,8 +37,7 @@ function Services() {
             beställare.
           </li>
           <li>
-            <strong>Driftsättning.</strong> Mätning, dokumentation och överlämning som är redo att laddas
-            upp i ert system.
+            <strong>Driftsättning.</strong> Mätning, dokumentation och överlämning.
           </li>
         </ol>
       </div>

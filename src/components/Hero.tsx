@@ -28,7 +28,6 @@ function Hero({
       }}
     >
       <div className="container hero-content">
-        <p className="eyebrow">MCG Infrastruktur & Entreprenad</p>
         <h1>{title}</h1>
         <p className="lead">{subtitle}</p>
         <div className="hero-actions">
@@ -42,9 +41,9 @@ function Hero({
           ) : null}
         </div>
         <div className="hero-badges">
-          <span>Fiber, schakt & bygg</span>
+          <span>Fiber och markarbeten</span>
           <span>Projektledning från start till drift</span>
-          <span>Nationell räckvidd</span>
+          <span>Bred kunskap</span>
         </div>
       </div>
     </section>

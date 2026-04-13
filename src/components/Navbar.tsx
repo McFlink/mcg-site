@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logo from '../assets/images/MCG-black-bg.png'
+import logo from '../assets/images/MCG-letter.png'
 import './Navbar.css'
 import ThemeToggle from "./ThemeToggle"
 
@@ -23,7 +23,7 @@ function Navbar() {
       <div className="container nav-inner">
         <Link to="/" className="brand" onClick={closeMenu}>
           <img src={logo} alt="MCG logotyp" className="brand-logo" />
-          <span className="brand-text">Mark & Fiber</span>
+          <span className="brand-text">Mark & anläggning</span>
         </Link>
 
         <button
@@ -52,10 +52,6 @@ function Navbar() {
             </NavLink>
           ))}
         </nav>
-
-        <Link to="/contact" className="nav-cta" onClick={closeMenu}>
-          Boka möte
-        </Link>
         <ThemeToggle />
       </div>
     </header>

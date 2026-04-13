@@ -10,10 +10,12 @@
   width: auto;
   display: block;
   object-fit: contain;
-  border-radius: 6px;
+  padding: 4px 8px;
+  background: #ffffff;
+  border-radius: 8px;
 }
 
 .brand-text {
   font-weight: 600;
-  color: #1f2937;
+  color: #ffffff;
 }

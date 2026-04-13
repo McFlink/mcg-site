@@ -8,37 +8,37 @@ export type Service = {
 export const services: Service[] = [
   {
     id: 'fiber',
-    title: 'Fiberinstallation & blåsfiber',
+    title: 'Fiber',
     description:
-      'Vi bygger robusta fibernät från stomme till sista kunduttag, med spårbar dokumentation och tydlig egenkontroll.',
-    points: ['Stomnät och access', 'Mätning och OTDR', 'Dokumentation mot beställare'],
+      'Vi bygger robusta fibernät från stomme till sista kunduttag, med spårbar dokumentation och fokus på kvalitet.',
+    points: ['Fiber', 'Mätning', 'Dokumentation mot kund'],
   },
   {
     id: 'schakt',
-    title: 'Schakt & markarbeten',
+    title: 'Mark & anläggning',
     description:
       'Erfarna maskinförare och moderna maskiner för säkra schakter i gata, park och industrimiljöer.',
-    points: ['Maskinpark för trånga miljöer', 'Trafikanordningsplaner', 'Återställning enligt krav'],
+    points: ['Maskiner för jobbet', 'Gräv', 'Återställning'],
   },
   {
-    id: 'borrning',
-    title: 'Styrd borrning & kanalisation',
+    id: 'mark',
+    title: 'Sten- och plattsättning',
     description:
-      'Planering och utförande av styrd borrning, dragning av kanalisation och tryckprovning innan driftsättning.',
-    points: ['PEM, rör och dukter', 'Tryckprovning', 'Samordning med ledningsägare'],
+      'Planering och utförande av plattsättning och andra markarbeten.',
+    points: ['Marksten', 'Planering', 'Dokumentation'],
   },
   {
-    id: 'bygg',
-    title: 'Bygg & grundläggning',
+    id: 'samarbeten',
+    title: 'Stolta samarbetspartners',
     description:
-      'Plintar, fundament, betongplattor och mindre byggnationer som binder ihop mark och teknik.',
-    points: ['Grundläggning för teknikbodar', 'Finplanering', 'Prefabricerade lösningar'],
+      'Ingen kund är för liten. Vi samarbetar med skolor, kommuner och privatkunder i hela regionen.',
+    points: ['Skolor', 'Kommuner', 'Privatkunder'],
   },
   {
     id: 'service',
-    title: 'Serviceavtal & drift',
+    title: 'Reparation & underhåll',
     description:
-      'Jour och planerat underhåll för nät och anläggning. Snabba insatser vid driftstopp.',
-    points: ['Felsökning på plats', 'Planerade inspektioner', 'Reservdelar i lager'],
+      'Vi håller vad vi lovar. Reparerar och underhåller med kvalitetstänk. Snabba insatser vid driftstopp.',
+    points: ['Felsökning', 'Inspektioner', 'Material i lager'],
   },
 ]
