@@ -1,16 +1,67 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import ProjectCard from '../components/ProjectCard'
 import ServiceCard from '../components/ServiceCard'
+import splashLogo from '../assets/images/MCG-letter.png'
 import { projects } from '../data/projects'
 import { services } from '../data/services'
 
+const splashStorageKey = 'homeSplashSeen'
+const splashHoldMs = 1000
+const splashExitMs = 700
+
 function Home() {
+  const [isSplashVisible, setIsSplashVisible] = useState<boolean>(() => {
+    if (typeof window === 'undefined') {
+      return false
+    }
+
+    return window.sessionStorage.getItem(splashStorageKey) !== 'true'
+  })
+  const [isSplashExiting, setIsSplashExiting] = useState(false)
   const featuredServices = services.slice(0, 4)
   const featuredProjects = projects.slice(0, 3)
 
+  useEffect(() => {
+    if (!isSplashVisible) {
+      return
+    }
+
+    setIsSplashExiting(false)
+
+    const exitTimer = window.setTimeout(() => {
+      setIsSplashExiting(true)
+    }, splashHoldMs)
+
+    return () => {
+      window.clearTimeout(exitTimer)
+    }
+  }, [isSplashVisible])
+
+  useEffect(() => {
+    if (!isSplashVisible || !isSplashExiting) {
+      return
+    }
+
+    const hideTimer = window.setTimeout(() => {
+      setIsSplashVisible(false)
+      window.sessionStorage.setItem(splashStorageKey, 'true')
+    }, splashExitMs)
+
+    return () => {
+      window.clearTimeout(hideTimer)
+    }
+  }, [isSplashVisible, isSplashExiting])
+
   return (
     <>
+      {isSplashVisible ? (
+        <div className={`home-splash ${isSplashExiting ? 'is-exiting' : ''}`}>
+          <img src={splashLogo} alt="MCG logotyp" className="home-splash-logo" />
+        </div>
+      ) : null}
+
       <Hero
         title="MCG – fiber, mark och entreprenad"
         subtitle="Vi bygger robust infrastruktur: från projektering och schakt till fiberblåsning, bygg och driftsättning. Ett team, ett ansvar."
@@ -116,7 +167,7 @@ function Home() {
           </div>
           <div className="cta-actions">
             <Link to="/contact" className="btn primary">
-              Boka ett samtal
+              Kontakta oss
             </Link>
             <Link to="/services" className="btn ghost">
               Våra leveranser

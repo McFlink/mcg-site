@@ -9,15 +9,15 @@ function Footer() {
         <div className="footer-brand">
           <div className="brand-mark">MCG</div>
           <p>
-            Robust partner för fiber, schakt och bygg i hela Sverige. Vi kombinerar
-            ingenjörskunskap med praktisk erfarenhet för projekt som håller.
+            Robust partner för fiber, schakt och bygg i Värmlands region. Vi kombinerar
+            jävlar anamma med praktisk erfarenhet för projekt som håller.
           </p>
         </div>
         <div className="footer-block">
           <h4>Kontakt</h4>
           <ul>
             <li>Telefon: 010-123 45 67</li>
-            <li>E-post: info@mcg.se</li>
+            <li>E-post: mcg-jk@mcg-master.com</li>
             <li>Adress: Bergsgårdsvägen 6, 667 34 Forshaga</li>
           </ul>
         </div>
@@ -39,7 +39,6 @@ function Footer() {
           <h4>Öppettider</h4>
           <ul>
             <li>Vardagar 07.00–16.00</li>
-            <li>Jour vid driftstopp</li>
           </ul>
         </div>
       </div>
